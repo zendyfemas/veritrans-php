@@ -93,6 +93,7 @@ class Veritrans_ApiRequestor {
       if (!in_array($result_array->status_code, array(200, 201, 202, 407))) {
         $message = 'Veritrans Error (' . $result_array->status_code . '): '
             . $result_array->status_message;
+        if (isset($result_array->validation_messages)) $message .= '. Validation Messages (' . implode(", ", $result_array->validation_messages) . ')';
         throw new Exception($message, $result_array->status_code);
       }
       else {
