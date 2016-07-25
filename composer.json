@@ -1,5 +1,5 @@
 {
-    "name": "veritrans/veritrans-php",
+    "name": "arthurnumen/veritrans-php",
     "description": "PHP Wraper for Veritrans VT-Web Payment API.",
     "homepage": "https://veritrans.co.id",
     "version": "1.0.1",
