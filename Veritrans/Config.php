@@ -37,7 +37,8 @@ class Veritrans_Config {
    */
   public static $curlOptions = array();
 
-  const SANDBOX_BASE_URL = 'https://api.sandbox.veritrans.co.id/v2';
+  // const SANDBOX_BASE_URL = 'https://api.sandbox.veritrans.co.id/v2';
+  const SANDBOX_BASE_URL = 'http://117.102.118.210:8080/v2' // UAT
   const PRODUCTION_BASE_URL = 'https://api.veritrans.co.id/v2';
 
   /**
